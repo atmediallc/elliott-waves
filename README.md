@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# 〜 Ondas de Elliott — Guía Interactiva
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Una aplicación visual e interactiva para aprender y dominar la Teoría de Ondas de Elliott aplicada al análisis técnico de mercados financieros.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📈 ¿Qué es esto?
 
-### `npm start`
+Esta herramienta convierte las reglas de las **Ondas de Elliott** en una experiencia visual interactiva. En lugar de leer una lista aburrida de reglas, puedes explorar cada onda tocándola directamente en el gráfico y ver sus reglas al instante.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ⚡ Funcionalidades
 
-### `npm test`
+- 🖱️ **Gráfico interactivo** — toca cualquier onda para ver sus reglas
+- 🎨 **Código de colores** — cada onda tiene su propio color identificador
+- 📋 **Reglas organizadas** — ondas motrices, impulsivas, correctivas y niveles de Fibonacci
+- 🌑 **Diseño dark mode** — pensado para largas sesiones de estudio
+- 📱 **Responsive** — funciona en móvil y escritorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🌊 Ondas cubiertas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Onda | Tipo | Color |
+|------|------|-------|
+| Onda 1 | Impulsiva o Motriz | 🔵 Azul |
+| Onda 2 | Correctiva | 🟠 Naranja |
+| Onda 3 | Siempre Motriz | 🟢 Verde |
+| Onda 4 | Correctiva | 🟠 Naranja |
+| Onda 5 | Impulsiva o Motriz | 🟣 Púrpura |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 Instalación local
+```bash
+# Clonar el repositorio
+git clone https://github.com/atmediallc/elliott-waves.git
 
-### `npm run eject`
+# Entrar a la carpeta
+cd elliott-waves
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Instalar dependencias
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Correr en modo desarrollo
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🏗️ Build para producción
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Genera la carpeta `/build` lista para desplegar.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🛠️ Tecnologías
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [React](https://reactjs.org/)
+- SVG nativo para el gráfico interactivo
+- CSS-in-JS para los estilos
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📚 Sobre la Teoría
 
-### Making a Progressive Web App
+La **Teoría de Ondas de Elliott** fue desarrollada por Ralph Nelson Elliott en los años 30. Plantea que los mercados financieros se mueven en patrones repetitivos de **5 ondas impulsivas** y **3 ondas correctivas**, reflejando la psicología colectiva de los inversores.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📄 Licencia
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+MIT — libre para usar, modificar y compartir.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">Hecho para traders que quieren dominar el análisis técnico 📊</p>
