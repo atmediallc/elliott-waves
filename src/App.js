@@ -134,7 +134,7 @@ export default function ElliottWaves() {
             {[
               { x: 65, y: 68, wave: "1" },
               { x: 136, y: 108, wave: "2" },
-              { x: 310, y: 28, wave: "3" }
+              { x: 310, y: 28, wave: "3" },
               { x: 335, y: 83, wave: "4" },
               { x: 405, y: 43, wave: "5" },
             ].map(({ x, y, wave }) => (
