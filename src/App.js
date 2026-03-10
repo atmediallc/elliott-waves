@@ -136,14 +136,14 @@ export default function ElliottWaves() {
           position: "relative",
           overflow: "hidden",
         }}>
-          <svg viewBox="0 0 500 160" style={{ width: "100%", height: "auto" }}>
+          <svg viewBox="0 0 500 170" style={{ width: "100%", height: "auto" }}>
             {/* Grid lines */}
-            {[40, 80, 120].map(y => (
+            {[50, 90, 130].map(y => (
               <line key={y} x1="0" y1={y} x2="500" y2={y} stroke="#1E2130" strokeWidth="1" />
             ))}
             {/* Wave path */}
             <polyline
-              points="30,130 110,50 170,90 280,20 350,70 430,30"
+              points="30,140 110,60 170,100 310,25 370,75 450,35"
               fill="none"
               stroke="#2A2D38"
               strokeWidth="2"
@@ -151,11 +151,11 @@ export default function ElliottWaves() {
             />
             {/* Colored segments */}
             {[
-              { points: "30,130 110,50", wave: "1" },
-              { points: "110,50 170,90", wave: "2" },
-              { points: "170,90 280,20", wave: "3" },
-              { points: "280,20 350,70", wave: "4" },
-              { points: "350,70 430,30", wave: "5" },
+              { points: "30,140 110,60", wave: "1" },
+              { points: "110,60 170,100", wave: "2" },
+              { points: "170,100 310,25", wave: "3" },
+              { points: "310,25 370,75", wave: "4" },
+              { points: "370,75 450,35", wave: "5" },
             ].map(({ points, wave }) => (
               <polyline
                 key={wave}
@@ -169,11 +169,11 @@ export default function ElliottWaves() {
             ))}
             {/* Labels */}
             {[
-              { x: 65, y: 43, wave: "1" },
-              { x: 136, y: 83, wave: "2" },
-              { x: 280, y: 5, wave: "3" },
-              { x: 310, y: 63, wave: "4" },
-              { x: 385, y: 23, wave: "5" },
+              { x: 65, y: 53, wave: "1" },
+              { x: 136, y: 93, wave: "2" },
+              { x: 310, y: 14, wave: "3" },
+              { x: 335, y: 68, wave: "4" },
+              { x: 405, y: 28, wave: "5" },
             ].map(({ x, y, wave }) => (
               <g key={wave} style={{ cursor: "pointer" }} onClick={() => setActive(`w${wave}`)}>
                 <circle
