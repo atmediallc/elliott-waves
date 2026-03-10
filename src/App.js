@@ -108,7 +108,7 @@ export default function ElliottWaves() {
               <line key={y} x1="0" y1={y} x2="500" y2={y} stroke="#1E2130" strokeWidth="1" />
             ))}
             <polyline
-              points="30,155 110,75 170,115 310,40 370,90 450,50"
+              points="30,155 110,75 170,115 310,15 370,90 450,50"
               fill="none"
               stroke="#2A2D38"
               strokeWidth="2"
@@ -117,7 +117,7 @@ export default function ElliottWaves() {
             {[
               { points: "30,155 110,75", wave: "1" },
               { points: "110,75 170,115", wave: "2" },
-              { points: "170,115 310,40", wave: "3" },
+              { points: "170,115 310,15", wave: "3" },
               { points: "310,40 370,90", wave: "4" },
               { points: "370,90 450,50", wave: "5" },
             ].map(({ points, wave }) => (
@@ -134,7 +134,7 @@ export default function ElliottWaves() {
             {[
               { x: 65, y: 68, wave: "1" },
               { x: 136, y: 108, wave: "2" },
-              { x: 310, y: 25, wave: "3" },
+              { x: 310, y: 28, wave: "3" }
               { x: 335, y: 83, wave: "4" },
               { x: 405, y: 43, wave: "5" },
             ].map(({ x, y, wave }) => (
