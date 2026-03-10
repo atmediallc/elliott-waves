@@ -7,7 +7,7 @@ const PADDING = { top: 20, bottom: 20, left: 10, right: 10 };
 
 function fetchCandles() {
   return fetch(
-    "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=4h&limit=60"
+    "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=4h&limit=58"
   ).then((r) => r.json());
 }
 
