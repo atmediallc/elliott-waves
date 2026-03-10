@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Chart from "./Chart";
 
 const rules = [
   {
@@ -101,13 +102,23 @@ export default function ElliottWaves() {
           <div className="header-divider" />
         </div>
 
+        {/* Gráfico de Velas BTC/USDT */}
+        <div style={{
+          background: "#13161E",
+          border: "1px solid #2A2D38",
+          borderRadius: 12,
+          padding: "1.5rem",
+          marginBottom: "1.5rem",
+        }}>
+          <Chart />
+        </div>
+
         {/* Wave Visual */}
         <div className="wave-container">
           <svg viewBox="0 0 520 190" className="wave-svg">
             {[40, 80, 120, 160].map(y => (
               <line key={y} x1="0" y1={y} x2="520" y2={y} stroke="#1E2130" strokeWidth="1" />
             ))}
-            {/* Dashed background path - puntos conectados correctamente */}
             <polyline
               points="20,170 100,120 150,145 290,28 340,85 490,18"
               fill="none"
@@ -115,7 +126,6 @@ export default function ElliottWaves() {
               strokeWidth="2"
               strokeDasharray="4 2"
             />
-            {/* Segmentos coloreados - todos conectados */}
             {[
               { points: "20,170 100,120", wave: "1" },
               { points: "100,120 150,145", wave: "2" },
@@ -133,7 +143,6 @@ export default function ElliottWaves() {
                 onClick={() => setActive(`w${wave}`)}
               />
             ))}
-            {/* Labels */}
             {[
               { x: 55,  y: 130, wave: "1" },
               { x: 122, y: 155, wave: "2" },
