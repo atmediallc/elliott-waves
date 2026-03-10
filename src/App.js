@@ -136,7 +136,7 @@ export default function ElliottWaves() {
           position: "relative",
           overflow: "hidden",
         }}>
-          <svg viewBox="0 0 500 160" style={{ width: "100%", height: "90%" }}>
+          <svg viewBox="0 0 500 160" style={{ width: "100%", height: "auto" }}>
             {/* Grid lines */}
             {[40, 80, 120].map(y => (
               <line key={y} x1="0" y1={y} x2="500" y2={y} stroke="#1E2130" strokeWidth="1" />
@@ -171,7 +171,7 @@ export default function ElliottWaves() {
             {[
               { x: 65, y: 43, wave: "1" },
               { x: 136, y: 83, wave: "2" },
-              { x: 220, y: 13, wave: "3" },
+              { x: 280, y: 5, wave: "3" },
               { x: 310, y: 63, wave: "4" },
               { x: 385, y: 23, wave: "5" },
             ].map(({ x, y, wave }) => (
